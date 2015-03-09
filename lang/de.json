@@ -1,0 +1,13 @@
+{
+    "COMMON_INSTALL": "Installieren",
+    
+    "NAV_ABOUT":     "Über",
+    
+    "SITE_ABOUT_CONTRIBUTORS": "Mitwirkende",
+    "SITE_ABOUT_DISCLAIMER_TEXT": "Die hier dargestellten Inhalte dienen ausschließlich der neutralen Information, allgemeinen Weiterbildung und Forschung. Sie stellen keine Empfehlung oder Bewerbung der beschriebenen oder erwähnten diagnostischen Methoden, Behandlungen oder Arzneimittel dar. Die Informationen ersetzen keinesfalls die fachliche Beratung durch einen Arzt oder Apotheker und dürfen nicht als Grundlage zur eigenständigen Diagnose und Beginn, Änderung oder Beendigung einer Behandlung von Krankheiten verwendet werden. Konsultieren Sie bei gesundheitlichen Fragen oder Beschwerden immer den Arzt Ihres Vertrauens!",
+    "SITE_ABOUT_INSTALLATION_TEXT": "Wenn sie den Mozilla Firefox Browser nutzen, können sie SemaMed lokal auf ihrem Endgerät installieren. Klicken sie dafür einfach den folgenden Button",
+    
+    "SITE_OVERVIEW_INTERACTIONS": "Interaktionen",
+    "SITE_OVERVIEW_ADD_DRUG": "Medikament",
+    "SITE_OVERVIEW_ADD_DRUG2": "Medikament hinzufügen"
+}

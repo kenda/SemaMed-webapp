@@ -1,0 +1,51 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    background-color: #E5E5E5;
+    font-family: 'RobotoDraft', sans-serif;
+}
+#fab-add {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+core-submenu > #submenu > core-item {
+    border-bottom: 1px solid #ccc;
+}
+core-scaffold core-toolbar {
+    background-color: #03a9f4;
+    color: #fff;
+}
+core-menu {
+    color: #01579b;
+    margin: 10px 0 0 0;
+}
+core-menu > core-item.core-selected {
+    background: #e1f5fe;
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.details{
+    border-width: 0px 1px 1px 1px;
+    border-color: #ddd;
+    border-style: solid;
+    padding: 20px;
+}
+#footer .navbar{
+    min-height: 0px;
+}
+#footer .btn {border-radius: 0;}
+#accordion {margin: -15px;}
+#accordion .panel-heading {
+    padding: 2px 5px;
+}
+#accordion .panel{
+    border-radius: 0px !important;
+}
+.btn{
+    padding: 5px 10px;
+}
+input, .form-control {
+    padding: 4px 8px;
+}

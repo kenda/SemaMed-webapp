@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" ng-app="semamed">
+    <head>
+	<title>SemaMed</title>
+	
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+	<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/levelgraph/build/levelgraph.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-translate/angular-translate.min.js"></script>
+	<script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<link rel="import" href="imports.html">
+	
+	<script>
+	 Polymer('core-submenu', {
+	     opened: true
+	 });
+	</script>
+    </head>
+    
+    <body unresolved>
+	<core-scaffold>
+	    <core-header-panel navigation flex>
+		<core-toolbar id="navheader">
+		    <span>SemaMed</span>
+		</core-toolbar>
+		<core-menu>
+		    <core-item icon="home" label="Medikationsplan"><a href="#/"></a></core-item>
+		    
+		    <core-submenu icon="list" label="Aktionen">
+			<core-item label="Interaktionen"><a href="#/ddi"></a></core-item>
+			<core-item label="SideEffect Detector"><a href="#/sidedetect"></a></core-item>
+			<core-item label="PRISCUS-Check"><a href="#/priscus"></a></core-item>
+		    </core-submenu>
+		    
+		    <core-item icon="swap-vert" label="Export"><a href="#/export"></a></core-item>
+		    <core-item icon="settings" label="Einstellungen"><a href="#/settings"></a></core-item>
+		</core-menu>
+	    </core-header-panel>
+	    
+	    <span tool>Medikationsplan</span>
+	    
+	    <div class="content">
+		<div id="content" class="container" ng-view="">
+		</div>
+	    </div>
+	</core-scaffold>
+	
+	<script src="js/app.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/services/drug.js"></script>
+	<script src="js/services/alert.js"></script>
+	
+    </body>    
+</html>

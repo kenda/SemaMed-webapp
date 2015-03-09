@@ -1,0 +1,13 @@
+{
+    "COMMON_INSTALL": "Install",
+    
+    "NAV_ABOUT":     "About",
+    
+    "SITE_ABOUT_CONTRIBUTORS": "Contributors",
+    "SITE_ABOUT_DISCLAIMER_TEXT": "This application contains general information about medical conditions and treatments.  The information is not advice, and should not be treated as such. The medical information on this website is provided \"as is\" without any representations or warranties, express or implied. SemaMed makes no representations or warranties in relation to the medical information on this website. If you have any specific questions about any medical matter you should consult your doctor or other professional healthcare provider.",
+    "SITE_ABOUT_INSTALLATION_TEXT": "By using the Mozilla Firefox Browser you can install SemaMed as an application locally on your platform. Just click the following button to start the installation",
+    
+    "SITE_OVERVIEW_INTERACTIONS": "Interactions",
+    "SITE_OVERVIEW_ADD_DRUG": "Add Drug",
+    "SITE_OVERVIEW_ADD_DRUG2": "Add Drug"
+}

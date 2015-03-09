@@ -1,0 +1,37 @@
+<!-- <script type="text/javascript">
+  $(document).ready(function() {
+    $("#install").click(function(){
+      var request = window.navigator.mozApps.install("http:// request.get_host  static "manifest.webapp" ");
+      request.onsuccess = function () {
+	// Save the App object that is returned
+	var appRecord = this.result;
+	console.log('Installation successful!');
+      };
+      request.onerror = function () {
+	// Display the error information from the DOMError object
+	console.log('Install failed, error: ' + this.error.name);
+      };
+    });
+  });
+</script>-->
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h1>{{ 'NAV_ABOUT' | translate }} SemaMed</h1></div>
+	
+  <div class="panel-body" style="margin:10px;">
+
+    <h3>{{ 'SITE_ABOUT_CONTRIBUTORS' | translate }}:</h3>
+<ul>
+  <li><address>
+  <strong>Marcus Nitzschke, Universität Leipzig</strong><br>
+  <a href="mailto:#">nitzschke@informatik.uni-leipzig.de</a>
+  </address></li>
+</ul>
+
+<h3>Disclaimer:</h3>
+{{ 'SITE_ABOUT_DISCLAIMER_TEXT'|translate }}
+
+<h3>Installation</h3>
+{{ 'SITE_ABOUT_INSTALLATION_TEXT'|translate }}:<br/>
+<button disabled="disabled" id="install" type="button" class="btn btn-info">{{ "COMMON_INSTALL"|translate }}</button>
+  </div>
