@@ -27,43 +27,43 @@ Export <span class="caret"></span>
 <div class="panel panel-default">
 <div class="panel-heading"><h1><i class="icon-hospital"></i> Your medication plan</h1></div>
 -->
-<div class="panel-body" style="margin:10px;">
-	
-	<div class="table-responsive">
-	  
-	  <table class="table table-bordered table-hover">
-	    <thead>
-	      <tr>
-		<th>Label</th>
-		<th>Ingredient</th>
-		<th>Form</th>
-		<th>Dosage</th>
-		<th>Taking</th>
-		<th>Taking unit</th>
-		<th>Notes</th>
-		<th>Reason</th>
-		<th>Actions</th>
-	      </tr>
-	    </thead>
-	    <tbody>
-	      <tr ng-repeat="drug in drugs">
-		<td>{{ drug.label }}</td>
-		<td>{{ drug.ingredient }}</td>
-		<td>{{ drug.form }}</td>
-		<td>{{ drug.dosage }} {{ drug.dosage_unit }}</td>
-		<td>{{ drug.taking_morning }}|{{ drug.taking_noon }}|{{ drug.taking_evening }}|{{ drug.taking_night }}</td>
-		<td>{{ drug.taking_unit }}</td>
-		<td>{{ drug.notes }}</td>
-		<td>{{ drug.reason }}</td>
-		<td>
-		  <a href="#/drug/edit/{{drug.id}}"><i class="icon-pencil"></i> edit</a>&nbsp;
-		  <a ng-click="deleteDrug(drug.id)" href="#"><i class="icon-trash"></i> delete</a>
-		</td>
-	      </tr>
-	    </tbody>
-	  </table>
-	</div>
-	 </div>
+<!-- <div class="panel-body" style="margin:10px;">
+
+<div class="table-responsive">
+
+<table class="table table-bordered table-hover">
+<thead>
+<tr>
+<th>Label</th>
+<th>Ingredient</th>
+<th>Form</th>
+<th>Dosage</th>
+<th>Taking</th>
+<th>Taking unit</th>
+<th>Notes</th>
+<th>Reason</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="drug in drugs">
+<td>{{ drug.label }}</td>
+<td>{{ drug.ingredient }}</td>
+<td>{{ drug.form }}</td>
+<td>{{ drug.dosage }} {{ drug.dosage_unit }}</td>
+<td>{{ drug.taking_morning }}|{{ drug.taking_noon }}|{{ drug.taking_evening }}|{{ drug.taking_night }}</td>
+<td>{{ drug.taking_unit }}</td>
+<td>{{ drug.notes }}</td>
+<td>{{ drug.reason }}</td>
+<td>
+<a href="#/drug/edit/{{drug.id}}"><i class="icon-pencil"></i> edit</a>&nbsp;
+<a ng-click="deleteDrug(drug.id)" href="#"><i class="icon-trash"></i> delete</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div> -->
 	<!-- </div>
 	</div>
 
@@ -133,3 +133,7 @@ Export <span class="caret"></span>
 	</div>
     </div>
 </div> -->
+<drug-item ng-repeat="drug in drugs">
+    <span id="label"">{{drug.label}}</span>
+    <span id="ingredient">{{drug.ingredient}}</span>
+</drug-item>

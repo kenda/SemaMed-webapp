@@ -1,0 +1,77 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<polymer-element name="drug-item">
+    <template>
+
+	<style>
+	 .drug-item{
+	     max-width: 400px;
+	     float: left;
+	     margin: 5px;
+	 }
+	 .drug-item .panel-heading{
+	     padding: 10px;
+	 }
+	 .drug-item h2{
+	     margin: 5px 0px;
+	 }
+	 .drug-item .panel-footer{
+	     padding: 0px;
+	 }
+	 .drug-item #icon{
+	     margin: 3px;
+	 }
+	 .drug-item .edit-drug{
+	     color: #fbc02d;
+	     font-weight: bold;
+	     text-align: center;
+	 }
+	 .drug-item .delete-drug{
+	     color: #dd2c00;
+	     font-weight: bold;
+	 }
+	 .drug-item .detail-drug{
+	     color: #666;
+	     font-weight: bold;
+	 }
+	</style>
+	
+	<div class="panel panel-default drug-item">
+	    <div class="panel-heading">
+		<h2><content select="span#label"></content></h2>
+		<content select="span#ingredient"></content>
+	    </div>
+	    <div class="panel-body">
+		<dl class="dl-horizontal">
+		    <dt>Taking:</dt> <dd>{{drug.taking_morning}}|{{drug.taking_noon}}|{{drug.taking_evening}}|{{drug.taking_night}} {{drug.taking_unit}}</dd>
+		    {% if drug.form %}<dt>Form:</dt><dd>{{ drug.form }}</dd>{% endif %}
+		    {% if drug.dosage %}<dt>Dosage:</dt><dd>{{ drug.dosage }} {{ drug.dosage_unit }}</dd>{% endif %}
+		    {% if drug.notes %}<dt>Notes:</dt><dd>{{ drug.notes }}</dd>{% endif %}
+		    <dt>Reason:</dt><dd>{{ drug.reason }}</dd>
+		</dl>
+	    </div>
+	    <div class="panel-footer">
+		<div class="row">
+		    <div class="col-md-4">
+			<core-item class="detail-drug" label="Details" icon="info-outline">
+			    <a href="/drug/{{drug.id}}/"></a>
+			</core-item>
+		    </div>
+		    <div class="col-md-4">
+			<core-item class="edit-drug" label="Edit" icon="create">
+			    <a href="#/drug/edit/{{drug.id}}"></a>
+			</core-item>
+		    </div>
+		    <div class="col-md-4">
+			<core-item class="delete-drug" label="Delete" icon="delete">
+			    <a href="#" ng-click="deleteDrug(drug.id)"></a>
+			</core-item>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </template>
+    <script>
+     Polymer({});
+    </script>
+</polymer-element>

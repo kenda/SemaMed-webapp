@@ -4,6 +4,11 @@ html,body {
     background-color: #E5E5E5;
     font-family: 'RobotoDraft', sans-serif;
 }
+
+#content{
+    padding: 5px;
+}
+
 #fab-add {
     position: absolute;
     bottom: 20px;
@@ -22,6 +27,10 @@ core-menu {
 }
 core-menu > core-item.core-selected {
     background: #e1f5fe;
+}
+
+.drug-item h2{
+    color: #03a9f4;
 }
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
