@@ -5,7 +5,7 @@ html,body {
     font-family: 'RobotoDraft', sans-serif;
 }
 
-#content{
+.content{
     padding: 5px;
 }
 
@@ -40,6 +40,10 @@ core-menu > core-item.core-selected {
 
 form[name=drugForm] input.ng-invalid {
     border: 1px solid #FA787E;
+}
+
+#settings-menu > core-item{
+    border-bottom: 1px solid #ccc;
 }
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
