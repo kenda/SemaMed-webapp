@@ -14,6 +14,9 @@ angular
 		$rootScope.online = true;
             });
 	}, false);
+	$rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+            $rootScope.title = current.$$route.title;
+	});
     })
     .controller('DrugCtrl', function($scope, $routeParams, $location, Drug, alertService){
 	$scope.drug = Drug;
