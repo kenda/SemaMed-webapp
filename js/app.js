@@ -45,8 +45,6 @@ angular
 	};
     })
     .controller('DrugFormCtrl', function($scope, $routeParams, $location, Drug, alertService){
-	$scope.drugForm = {};
-	
 	$scope.submitDrugForm = function(isValid){
 	    if (isValid){
 		var drug = {

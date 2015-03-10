@@ -10,8 +10,8 @@ angular
 	$routeProvider
 	    .when('/', { templateUrl: 'views/overview.html', controller: 'DrugCtrl', title: "Medikationsplan" })
 	    .when('/about', { templateUrl: 'views/about.html', title: "Über" })
-	    .when('/drug/add', { templateUrl: 'views/drug_form.html', controller: 'DrugFormCtrl', title: "neues Medikament", returnMenu: true})
-	    .when('/drug/edit/:id', { templateUrl: 'views/drug_form.html', controller: 'DrugFormCtrl' })
+	    .when('/drug/add', { templateUrl: 'views/drug_form.html', controller: 'DrugFormCtrl', title: "Medikament hinzufügen", returnMenu: true})
+	    .when('/drug/edit/:id', { templateUrl: 'views/drug_form.html', controller: 'DrugFormCtrl', title: "Medikament bearbeiten" })
 	    .when('/debug', { templateUrl: 'views/debug.html', controller: 'DebugCtrl' })
 	    .when('/settings', { templateUrl: 'views/settings.html', title: "Einstellungen" })
 	    .otherwise({ redirectTo: '/' });

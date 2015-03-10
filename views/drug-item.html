@@ -2,11 +2,11 @@
 
 <polymer-element name="drug-item">
     <template>
-
 	<style>
 	 .drug-item{
 	     float: left;
 	     margin: 5px;
+	     min-width: 300px;
 	 }
 	 .drug-item .panel-heading{
 	     padding: 10px;
@@ -56,17 +56,17 @@
 		<div class="row">
 		    <div class="col-md-4">
 			<core-item class="detail-drug" label="Details" icon="info-outline">
-			    <a href="/drug/{{drug.id}}/"></a>
+			    <content select="a#drug-detail-link"></content>
 			</core-item>
 		    </div>
 		    <div class="col-md-4">
 			<core-item class="edit-drug" label="Edit" icon="create">
-			    <a href="#/drug/edit/{{drug.id}}"></a>
+			    <content select="a#drug-edit-link"></content>
 			</core-item>
 		    </div>
 		    <div class="col-md-4">
 			<core-item class="delete-drug" label="Delete" icon="delete">
-			    <a href="#" ng-click="deleteDrug(drug.id)"></a>
+			    <content select="a#drug-delete-link"></content>
 			</core-item>
 		    </div>
 		</div>

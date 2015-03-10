@@ -7,6 +7,9 @@
 	<span id="drugform">{{ drug.form }}</span>
 	<span id="notes">{{ drug.notes }}</span>
 	<span id="reason">{{ drug.reason }}</span>
+	<a id="drug-detail-link" href="/drug/{{drug.id}}/"></a>
+	<a id="drug-edit-link" href="#/drug/edit/{{drug.id}}"></a>
+	<a id="drug-delete-link" href="#" ng-click="deleteDrug(drug.id)"></a>
     </drug-item>
     <a href="#/drug/add">
 	<paper-fab id="fab-add" icon="add"></paper-fab>

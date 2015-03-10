@@ -38,6 +38,10 @@ core-menu > core-item.core-selected {
     color: #03a9f4;
 }
 
+form[name=drugForm] input.ng-invalid {
+    border: 1px solid #FA787E;
+}
+
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 .details{
