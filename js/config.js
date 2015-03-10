@@ -1,8 +1,8 @@
 angular
     .module('semamed.config', [
+	'barcodeGenerator',
 	'ngRoute',
 	'pascalprecht.translate',
-	    //'ui.bootstrap',
 	'service.alert',
 	'service.drug'
     ])
@@ -14,6 +14,8 @@ angular
 	    .when('/drug/edit/:id', { templateUrl: 'views/drug_form.html', controller: 'DrugFormCtrl', title: "Medikament bearbeiten" })
 	    .when('/debug', { templateUrl: 'views/debug.html', controller: 'DebugCtrl', title: "Debug" })
 	    .when('/settings', { templateUrl: 'views/settings.html', title: "Einstellungen" })
+	    .when('/export', { templateUrl: 'views/export.html', title: "Export" })
+	    .when('/export/datamatrix', { templateUrl: 'views/export-datamatrix.html', title: "Export as DataMatrix" })
 	    .otherwise({ redirectTo: '/' });
     })
     .config(function ($translateProvider) {

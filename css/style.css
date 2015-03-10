@@ -42,7 +42,7 @@ form[name=drugForm] input.ng-invalid {
     border: 1px solid #FA787E;
 }
 
-#settings-menu > core-item{
+.menu > core-item{
     border-bottom: 1px solid #ccc;
 }
 
