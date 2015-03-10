@@ -1,97 +1,89 @@
-<div class="panel panel-default">
-  <div class="panel-heading"><h1>{{ 'SITE_OVERVIEW_ADD_DRUG2' | translate }}</h1></div>
-  <div class="panel-body" style="margin:10px;">
-    <div class="row">
-      <form name="drugForm">
-	<fieldset>
-	  <div class="col-md-6">
+<form name="drugForm">
+    <fieldset>
+	<div class="col-lg-6">
 	    <div class="form-group">
-	      <label class="control-label" for="label">Label</label>
-	      <input class="form-control" type="text" id="label" placeholder="Label" ng-model="drugForm.label" required="required">
+		<label class="control-label" for="label">Label</label>
+		<input class="form-control" type="text" id="label" placeholder="Label" ng-model="drugForm.label" required="required">
 	    </div>
 	    <div class="form-group">
-	      <label class="control-label" for="ingredient">Ingredient</label>
-	      <input class="form-control" type="text" id="ingredient" placeholder="Ingredient" ng-model="drugForm.ingredient" required="required">
+		<label class="control-label" for="ingredient">Ingredient</label>
+		<input class="form-control" type="text" id="ingredient" placeholder="Ingredient" ng-model="drugForm.ingredient" required="required">
 	    </div>
 	    <input type="hidden" name="ingredient_uri">
 	    <div class="form-group">
-	      <label class="control-label" for="form">Form</label>
-	      <select class="form-control" id="form" name="form" required="required" ng-model="drugForm.form">
-		<option value="tab">Tablette</option>
-		<option value="shot">Spritze</option>
-	      </select>
+		<label class="control-label" for="form">Form</label>
+		<select class="form-control" id="form" name="form" required="required" ng-model="drugForm.form">
+		    <option value="tab">Tablette</option>
+		    <option value="shot">Spritze</option>
+		</select>
 	    </div>
 	    <div class="row">
-	      <div class="col-xs-3">
-		<div class="form-group">
-		  <label class="control-label" for="id_taking_morning">Morning</label>
-		  <input class="form-control" id="id_taking_morning" name="taking_morning" placeholder="Morning" required="required" type="number" value="0" ng-model="drugForm.taking_morning">
+		<div class="col-xs-3">
+		    <div class="form-group">
+			<label class="control-label" for="id_taking_morning">Morning</label>
+			<input class="form-control" id="id_taking_morning" name="taking_morning" required="required" type="number" value="0" ng-model="drugForm.taking_morning">
+		    </div>
 		</div>
-	      </div>
-	      <div class="col-xs-3">
-		<div class="form-group">
-		  <label class="control-label" for="id_taking_noon">Noon</label>
-		  <input class="form-control" id="id_taking_noon" name="taking_noon" placeholder="Noon" required="required" type="number" value="0" ng-model="drugForm.taking_noon">
+		<div class="col-xs-3">
+		    <div class="form-group">
+			<label class="control-label" for="id_taking_noon">Noon</label>
+			<input class="form-control" id="id_taking_noon" name="taking_noon" required="required" type="number" value="0" ng-model="drugForm.taking_noon">
+		    </div>
 		</div>
-	      </div>
-	      <div class="col-xs-3">
-		<div class="form-group">
-		  <label class="control-label" for="id_taking_evening">Evening</label>
-		  <input class="form-control" id="id_taking_evening" name="taking_evening" placeholder="Evening" required="required" type="number" value="0" ng-model="drugForm.taking_evening">
+		<div class="col-xs-3">
+		    <div class="form-group">
+			<label class="control-label" for="id_taking_evening">Evening</label>
+			<input class="form-control" id="id_taking_evening" name="taking_evening" required="required" type="number" value="0" ng-model="drugForm.taking_evening">
+		    </div>
 		</div>
-	      </div>
-	      <div class="col-xs-3">
-		<div class="form-group">
-		  <label class="control-label" for="id_taking_night">Night</label>
-		  <input class="form-control" id="id_taking_night" name="taking_night" placeholder="Night" required="required" type="number" value="0" ng-model="drugForm.taking_night">
+		<div class="col-xs-3">
+		    <div class="form-group">
+			<label class="control-label" for="id_taking_night">Night</label>
+			<input class="form-control" id="id_taking_night" name="taking_night" required="required" type="number" value="0" ng-model="drugForm.taking_night">
+		    </div>
 		</div>
-	      </div>
 	    </div>
 
 	    <div class="form-group">
-	      <label class="control-label" for="id_taking_unit">Taking unit</label>
-	      <select class="form-control" id="id_taking_unit" name="taking_unit" required="required" ng-model="drugForm.taking_unit">
-		<option value="pieces">Stck</option>
-		<option value="iu">Internationele Einheiten</option>
-		<option value="hub">Hübe</option>
-	      </select>
+		<label class="control-label" for="id_taking_unit">Taking unit</label>
+		<select class="form-control" id="id_taking_unit" name="taking_unit" required="required" ng-model="drugForm.taking_unit">
+		    <option value="pieces">Stck</option>
+		    <option value="iu">Internationele Einheiten</option>
+		    <option value="hub">Hübe</option>
+		</select>
 	    </div>
-	  </div>
+	</div>
 	  
-	  <div class="col-md-6">
+	<div class="col-lg-6">
 	    <div class="row">
-	      <div class="col-xs-6">
-		<div class="form-group">
-		  <label class="control-label" for="id_dosage">Dosage</label>
-		  <input class="form-control" id="id_dosage" name="dosage" placeholder="Dosage" type="number" value="0" ng-model="drugForm.dosage">
+		<div class="col-xs-6">
+		    <div class="form-group">
+			<label class="control-label" for="id_dosage">Dosage</label>
+			<input class="form-control" id="id_dosage" name="dosage" placeholder="Dosage" type="number" value="0" ng-model="drugForm.dosage">
+		    </div>
 		</div>
-	      </div>
-	      <div class="col-xs-6">
-		<div class="form-group">
-		  <label class="control-label" for="id_dosage_unit">Dosage unit</label>
-		  <select class="form-control" id="id_dosage_unit" name="dosage_unit" required="required"  ng-model="drugForm.dosage_unit">
-		    <option value="mg">mg</option>
-		    <option value="g">g</option>
-		    <option value="ml">ml</option>
-		  </select>
+		<div class="col-xs-6">
+		    <div class="form-group">
+			<label class="control-label" for="id_dosage_unit">Dosage unit</label>
+			<select class="form-control" id="id_dosage_unit" name="dosage_unit" required="required"  ng-model="drugForm.dosage_unit">
+			    <option value="mg">mg</option>
+			    <option value="g">g</option>
+			    <option value="ml">ml</option>
+			</select>
+		    </div>
 		</div>
-	      </div>
 	    </div>
 	    <div class="form-group">
-	      <label class="control-label" for="id_notes">Notes</label>
-	      <textarea class="form-control" cols="40" id="id_notes" name="notes" placeholder="Notes" rows="10" ng-model="drugForm.notes"></textarea>
+		<label class="control-label" for="id_notes">Notes</label>
+		<textarea class="form-control" cols="40" id="id_notes" name="notes" placeholder="Notes" rows="10" ng-model="drugForm.notes"></textarea>
 	    </div>
 	    <div class="form-group">
-	      <label class="control-label" for="id_reason">Reason</label>
-	      <input class="form-control" id="id_reason" name="reason" placeholder="Reason" required="required" type="text"  ng-model="drugForm.reason">
+		<label class="control-label" for="id_reason">Reason</label>
+		<input class="form-control" id="id_reason" name="reason" placeholder="Reason" required="required" type="text"  ng-model="drugForm.reason">
 	    </div>
-	  </div>
-
-	  <div class="col-xs-12">
-	    <button ng-click="submitDrugForm(drugForm)" type="submit" class="btn btn-success">Submit</button>
-	  </div>
-	</fieldset>
-      </form>
-    </div>
-  </div>
-</div>
+	</div>
+    </fieldset>
+    <paper-fab id="fab-success" icon="done" ng-click="submitDrugForm(drugForm)">
+    </paper-fab>
+</form>    
+	

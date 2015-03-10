@@ -9,11 +9,16 @@ html,body {
     padding: 5px;
 }
 
-#fab-add {
-    position: absolute;
+paper-fab {
+    position: fixed;
     bottom: 20px;
     right: 20px;
 }
+
+#fab-success{
+    background-color: green;
+}
+
 core-submenu > #submenu > core-item {
     border-bottom: 1px solid #ccc;
 }
