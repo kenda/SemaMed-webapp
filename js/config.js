@@ -21,7 +21,7 @@ angular
     .config(function ($translateProvider) {
 	$translateProvider
 	    .useStaticFilesLoader({
-		prefix: '/lang/',
+		prefix: '../lang/',
 		suffix: '.json'
 	    })
 	    .determinePreferredLanguage();
