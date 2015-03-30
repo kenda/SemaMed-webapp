@@ -1,5 +1,13 @@
 {
-    "name": "SemaMed",
+    "name": "Semantic Management of Medicines",
+    "short_name": "SemaMed",
+    "icons": [
+	{
+	    "src": "launcher-icon-3x.png",
+	    "sizes": "144x144",
+	    "type": "image/png"
+	}
+    ],
     "start_url": "index.html",
     "display": "standalone"
 }
