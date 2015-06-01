@@ -1,0 +1,9 @@
+{
+  "name": "semamed",
+  "version": "0.0.0",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-server-livereload": "^1.4.0"
+  }
+}
